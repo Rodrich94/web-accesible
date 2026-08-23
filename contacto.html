@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Contacto - Inelco Ingenieria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="encabezado">
+        <div class="logo" onclick="window.location.href='index.html'">INELCO INGENIERÍA</div>
+        <div class="menu">
+            <span class="enlace" onclick="window.location.href='index.html'">Inicio</span>
+            <span class="enlace" onclick="window.location.href='nosotros.html'">Nosotros</span>
+            <span class="enlace" onclick="window.location.href='servicios.html'">Servicios</span>
+            <span class="enlace" onclick="window.location.href='catalogo.html'">Catálogo</span>
+            <span class="enlace" onclick="window.location.href='contacto.html'">Contacto</span>
+        </div>
+    </div>
+
+    <div id="contenido-principal">
+        <div class="seccion formulario-seccion">
+            <div class="titulo-falso">Contacto Comercial / Portal de Soporte</div>
+            <div class="sub-texto">Complete sus datos para solicitar cotización o enviar consulta a la IA.</div>
+            
+            <!-- Falla: Inputs sin etiqueta <label> -->
+            <input type="text" id="guest_nombre" placeholder="Nombre completo">
+            <input type="text" id="guest_email" placeholder="Correo electrónico">
+            <input type="text" id="guest_telefono" placeholder="Teléfono">
+            
+            <select id="topico">
+                <option value="">Seleccione un tópico</option>
+                <option value="503">Solicitud Cotización Obra Nueva</option>
+                <option value="999">Dudas generales</option>
+            </select>
+
+            <textarea id="descripcion" placeholder="Escriba su consulta aquí..."></textarea>
+
+            <div class="boton-falso" onclick="enviarConsulta()">Enviar Consulta</div>
+            <br><br>
+            <div class="texto-comun">¿Ya es cliente?</div>
+            <div class="boton-falso" onclick="window.location.href='http://soporte.inelco.com.ar/login'">Ingresar al Portal</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

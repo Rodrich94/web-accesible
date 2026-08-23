@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Inicio - Inelco Ingenieria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="encabezado">
+        <div class="logo" onclick="window.location.href='index.html'">INELCO INGENIERÍA</div>
+        <div class="menu">
+            <span class="enlace" onclick="window.location.href='index.html'">Inicio</span>
+            <span class="enlace" onclick="window.location.href='nosotros.html'">Nosotros</span>
+            <span class="enlace" onclick="window.location.href='servicios.html'">Servicios</span>
+            <span class="enlace" onclick="window.location.href='catalogo.html'">Catálogo</span>
+            <span class="enlace" onclick="window.location.href='contacto.html'">Contacto</span>
+        </div>
+    </div>
+
+    <div id="contenido-principal">
+        <div class="hero">
+            <div class="hero-text">37 años de trayectoria protegiendo tus activos.</div>
+        </div>
+        <div class="seccion">
+            <div class="titulo-falso">Pilares de Inelco</div>
+            <div class="item-servicio">Ingeniería - Eficiencia - Confianza</div>
+        </div>
+    </div>
+
+    <!-- Falla: Modal sin role="dialog", sin aria-modal, foco no atrapado, botón de cierre inaccesible -->
+    <div id="molesto-popup" class="modal-fondo">
+        <div class="modal-contenido">
+            <!-- Falla: Botón de cierre hecho con div, inaccesible por teclado -->
+            <div class="cerrar-modal" onclick="cerrarPopup()">X</div>
+            <div class="titulo-falso">¡ATENCIÓN! Promoción Exclusiva</div>
+            <div class="texto-modal">Contrate nuestro servicio de mantenimiento de red de incendios hoy y obtenga un 15% de descuento en la primera visita técnica.</div>
+            <div class="boton-falso" onclick="window.location.href='contacto.html'">Solicitar ahora</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
