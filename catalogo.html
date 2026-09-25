@@ -1,39 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo - Inelco Ingenieria</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="encabezado">
-        <div class="logo" onclick="window.location.href='index.html'">INELCO INGENIERÍA</div>
-        <div class="menu">
-            <span class="enlace" onclick="window.location.href='index.html'">Inicio</span>
-            <span class="enlace" onclick="window.location.href='nosotros.html'">Nosotros</span>
-            <span class="enlace" onclick="window.location.href='servicios.html'">Servicios</span>
-            <span class="enlace" onclick="window.location.href='catalogo.html'">Catálogo</span>
-            <span class="enlace" onclick="window.location.href='contacto.html'">Contacto</span>
-        </div>
-    </div>
 
-    <div id="contenido-principal">
+    <header class="encabezado">
+        <a class="logo" href="index.html">INELCO INGENIERÍA</a>
+        <nav class="menu" aria-label="Navegación principal">
+            <a class="enlace" href="index.html">Inicio</a>
+            <a class="enlace" href="nosotros.html">Nosotros</a>
+            <a class="enlace" href="servicios.html">Servicios</a>
+            <a class="enlace" href="catalogo.html">Catálogo</a>
+            <a class="enlace" href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
         <div class="seccion">
-            <div class="titulo-falso">Catálogo y Casos de Éxito</div>
+            <h1 class="titulo-falso">Catálogo y Casos de Éxito</h1>
             <div class="tarjeta-producto">
                 <!-- Falla: Imágenes sin texto alternativo descriptivo -->
-                <img src="https://via.placeholder.com/200x150?text=Panel+Incendio">
-                <div class="nombre-producto">Paneles Notifier NFS-320</div>
+                <img src="https://via.placeholder.com/200x150?text=Panel+Incendio" alt="Panel de detección de incendios Notifier NFS-320">
+                <h2 class="nombre-producto">Paneles Notifier NFS-320</h2>
             </div>
             <div class="tarjeta-producto">
-                <img src="https://via.placeholder.com/200x150?text=Molinetes">
-                <div class="nombre-producto">Controles ZKTEco Pro</div>
+                <img src="https://via.placeholder.com/200x150?text=Molinetes" alt="Molinete de control de accesos ZKTeco Pro">
+                <h2 class="nombre-producto">Controles ZKTEco Pro</h2>
             </div>
             <div class="tarjeta-producto">
-                <img src="https://via.placeholder.com/200x150?text=Bombas">
-                <div class="nombre-producto">Bombas Grundfos</div>
+                <img src="https://via.placeholder.com/200x150?text=Bombas" alt="Bomba hidráulica Grundfos para red de rociadores">
+                <h2 class="nombre-producto">Bombas Grundfos</h2>
             </div>
         </div>
-    </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

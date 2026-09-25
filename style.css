@@ -1,12 +1,14 @@
-/* Falla Crítica: Elimina el foco del teclado en todo el sitio */
-* {
-    outline: none !important;
+/* estilo de focus para navegacion por teclado */
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible {
+    outline: 3px solid #d9531e;
+    outline-offset: 2px;
 }
 
 body {
     font-family: Arial, sans-serif;
     font-size: 12px; 
-    color: #b0b0b0; /* Falla: Contraste bajísimo (gris claro sobre blanco) */
+    color: #333333; /* Arreglo: contraste (antes #b0b0b0) */
     background-color: #ffffff;
     margin: 0;
     padding: 0;
@@ -21,14 +23,12 @@ body {
 
 .logo {
     font-size: 16px;
-    color: #a0a0a0; 
-    cursor: pointer;
+    color: #6b3fa0; /* Arreglo: contraste (antes #a0a0a0) */
 }
 
 .enlace {
     margin-left: 15px;
-    color: #999999; 
-    cursor: pointer;
+    color: #2b2f36; /* Arreglo: contraste (antes #999999) */
 }
 
 .enlace:hover {
@@ -43,7 +43,7 @@ body {
 
 .hero-text {
     font-size: 18px;
-    color: #cccccc; 
+    color: #1c1c1c; /* Arreglo: contraste (antes #cccccc) */
 }
 
 .seccion {
@@ -54,7 +54,7 @@ body {
 .titulo-falso {
     font-size: 20px;
     font-weight: bold;
-    color: #888888;
+    color: #1c1c1c; /* Arreglo: contraste (antes #888888) */
     margin-bottom: 15px;
 }
 
@@ -68,20 +68,30 @@ body {
     text-align: center;
 }
 
+.nombre-producto {
+    /* Arreglo: paso de div a h2 (jerarquía real); se resetea el estilo por defecto de h2 para que se vea igual que antes */
+    font-size: 1em;
+    font-weight: normal;
+    margin: 5px 0 0;
+}
+
 .formulario-seccion input, .formulario-seccion textarea, .formulario-seccion select {
     display: block;
     width: 300px;
     margin-bottom: 10px;
     padding: 5px;
-    border: 1px solid #ccc;
-    color: #aaa;
+    border: 1px solid #767676;
+    color: #1c1c1c; /* Arreglo: contraste (antes #aaa) */
 }
 
 .boton-falso {
     display: inline-block;
-    background-color: #ffcccc; 
-    color: #ff6666; 
+    background-color: #6b3fa0; /* Arreglo: contraste (antes #ffcccc / #ff6666) */
+    color: #ffffff;
     padding: 10px 20px;
+    border: none;
+    font: inherit;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -111,12 +121,12 @@ body {
     position: absolute;
     top: 5px;
     right: 10px;
-    color: #e0e0e0; 
-    font-size: 10px;
+    color: #1c1c1c; /* Arreglo: contraste (antes #e0e0e0) */
+    font-size: 18px; /* Arreglo: tamaño de objetivo de clic (antes 10px) */
     cursor: pointer;
 }
 
 .texto-modal {
     margin-bottom: 20px;
-    color: #b0b0b0;
+    color: #333333; /* Arreglo: contraste (antes #b0b0b0) */
 }

@@ -1,16 +1,16 @@
-<!DOCTYPE html> <!--Utilizamos hml5 y cambiamos el idioma a español por defecto-->
+<!DOCTYPE html> <!-- html5 y cambiamos el idioma a espanl por defecto-->
 <html lang="es">
 <head>
-    <meta charset="UTF-8"> <!--Especificacion para la interpretacion de los caracteres UTF-8 á é í ó ú ñ-->
+    <meta charset="UTF-8"> <!--especificacion para el navegador para que sepa como interpretar los caracteres-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Adaptacion a diferentes tipos de pantallas -->
     <title>Inicio - Inelco Ingenieria</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header class="encabezado"> <!--Cambio de div onclick--> 
+
+    <header class="encabezado"> <!--cambio de div onclick-->
         <a class="logo" href="index.html">INELCO INGENIERÍA</a>
-        <nav class="menu" aria-label="Navegación principal"> <!--Cambio a nav para elementos de navegacion principal. aria-label permite un nombre para tecnologias asistidas-->
+        <nav class="menu" aria-label="Navegación principal"> <!--cambio a nav para elementos de navegacion principal. aria-label permite un nombre para tecnologias asistidas-->
             <a class="enlace" href="index.html">Inicio</a>
             <a class="enlace" href="nosotros.html">Nosotros</a>
             <a class="enlace" href="servicios.html">Servicios</a>
@@ -19,13 +19,13 @@
         </nav>
     </header>
 
-    <main id="contenido-principal"> <!--Se identifica el contenido principal explicitamente-->
-        <section class="hero" aria-labelledby="titulo-principal"> <!--Identificamos el titulo principal-->
+    <main id="contenido-principal"> <!--se identifica el contenido principal-->
+        <section class="hero" aria-labelledby="titulo-principal"> <!--identificacion para el titulo-->
             <h1 class="hero-text" id="titulo-principal">37 años de trayectoria protegiendo tus activos.</h1> <!--cambio a etiqueta que corresponde a titulo-->
         </section>
         <div class="seccion">
             <h2 class="titulo-falso" id="titulo-pilares">Pilares de Inelco</h2>
-            <p class="item-servicio">Ingeniería - Eficiencia - Confianza</p> <!--Cambio a parrafo debajo del subtitulo-->
+            <p class="item-servicio">Ingeniería - Eficiencia - Confianza</p> <!--cambio a parrafo debajo del subtitulo-->
         </div>
     </main>
 
@@ -34,17 +34,15 @@
         aria-modal="true"
         aria-labelledby="titulo-promocion"
         aria-describedby="descripcion-promocion"
-        hidden
-    > <!--Se indica los elementos dialogos y con titulo descripcion para las tecnologias asistidas-->
+    > <!--uso de arial label-->
         <div class="modal-contenido">
             <!-- Falla: Botón de cierre hecho con div, inaccesible por teclado -->
             <button type="button" class="cerrar-modal" aria-label="Cerrar promoción" onclick="cerrarPopup()">
                 <span aria-hidden="true">×</span>
             </button> <!--Cambio div a button para cierre de modal-->
-            <h2 class="titulo-falso">¡ATENCIÓN! Promoción Exclusiva</h2> <!--Cambio por subtitulo-->
-            <!--Etiqueta p para representar texto en parrafo-->
-            <p class="texto-modal">Contrate nuestro servicio de mantenimiento de red de incendios hoy y obtenga un 15% de descuento en la primera visita técnica.</p>
-            <a class="boton" href="contacto.html">Solicitar ahora</a>
+            <h2 class="titulo-falso" id="titulo-promocion">¡ATENCIÓN! Promoción Exclusiva</h2> <!--cambio por h2-->
+            <p class="texto-modal" id="descripcion-promocion">Contrate nuestro servicio de mantenimiento de red de incendios hoy y obtenga un 15% de descuento en la primera visita técnica.</p> <!--etiqueta p para representar texto en parrafo-->
+            <a class="boton-falso" href="contacto.html">Solicitar ahora</a>
         </div>
     </div>
 

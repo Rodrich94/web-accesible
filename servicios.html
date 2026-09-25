@@ -1,31 +1,34 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Inelco Ingenieria</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="encabezado">
-        <div class="logo" onclick="window.location.href='index.html'">INELCO INGENIERÍA</div>
-        <div class="menu">
-            <span class="enlace" onclick="window.location.href='index.html'">Inicio</span>
-            <span class="enlace" onclick="window.location.href='nosotros.html'">Nosotros</span>
-            <span class="enlace" onclick="window.location.href='servicios.html'">Servicios</span>
-            <span class="enlace" onclick="window.location.href='catalogo.html'">Catálogo</span>
-            <span class="enlace" onclick="window.location.href='contacto.html'">Contacto</span>
-        </div>
-    </div>
 
-    <div id="contenido-principal">
+    <header class="encabezado">
+        <a class="logo" href="index.html">INELCO INGENIERÍA</a>
+        <nav class="menu" aria-label="Navegación principal">
+            <a class="enlace" href="index.html">Inicio</a>
+            <a class="enlace" href="nosotros.html">Nosotros</a>
+            <a class="enlace" href="servicios.html">Servicios</a>
+            <a class="enlace" href="catalogo.html">Catálogo</a>
+            <a class="enlace" href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
         <div class="seccion">
-            <div class="titulo-falso">Nuestras Soluciones Integrales</div>
-            <div class="item-servicio">Detección de Incendios: Paneles inteligentes y sensores (humo/calor).</div>
-            <div class="item-servicio">Extinción Hidráulica: Redes de rociadores y salas de bombas.</div>
-            <div class="item-servicio">Control de Accesos: Molinetes, biometría y portería virtual.</div>
-            <div class="item-servicio">Redes y Datos: Infraestructura y fibra óptica.</div>
-            <div class="item-servicio">Normativa y Proyectos: Asesoría y normas IRAM/NFPA.</div>
+            <h1 class="titulo-falso">Nuestras Soluciones Integrales</h1>
+            <p class="item-servicio">Detección de Incendios: Paneles inteligentes y sensores (humo/calor).</p>
+            <p class="item-servicio">Extinción Hidráulica: Redes de rociadores y salas de bombas.</p>
+            <p class="item-servicio">Control de Accesos: Molinetes, biometría y portería virtual.</p>
+            <p class="item-servicio">Redes y Datos: Infraestructura y fibra óptica.</p>
+            <p class="item-servicio">Normativa y Proyectos: Asesoría y normas IRAM/NFPA.</p>
         </div>
-    </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
