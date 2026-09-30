@@ -67,9 +67,17 @@ function validarCampo(campo) {
     let error = document.getElementById('error-' + campo.id);
     if (mensaje) {
         contenedor.classList.add('campo-invalido');
+
+        // NUEVO: informa a lectores de pantalla que el campo es inválido
+        campo.setAttribute('aria-invalid', 'true');
+
         error.textContent = mensaje;
     } else {
         contenedor.classList.remove('campo-invalido');
+
+        // NUEVO: informa que el campo volvió a ser válido
+        campo.setAttribute('aria-invalid', 'false');
+
         error.textContent = '';
     }
     return mensaje === "";
