@@ -29,45 +29,36 @@
 
             <!-- problema: no habia <form>, ni <label>, el envio era por onclick en un div -->
             <form id="formulario-contacto">
-                <fieldset> <!--fieldset y legend permiten que las tecnologías asistivas identifiquen que estos campos pertenecen al mismo grupo-->
-                    <legend>Datos de contacto</legend>
-                    <div class="campo">
-                        <label for="guest_nombre">Nombre completo</label>
-                        <!--aria-describedby: Vincula el campo con el texto de ayuda y con el mensaje de error. Un lector de pantalla puede identificar información adicional asociada al campo.-->
-                        <input type="text" id="guest_nombre" name="guest_nombre" required aria-describedby="nombre-ayuda error-guest_nombre" >
-                        <!-- Texto de ayuda contextual. aria-describedby permite que el lector de pantalla relacione esta información con el campo. -->
-                        <span id="nombre-ayuda" class="ayuda-campo"> Ingrese su nombre y apellido. </span>
-                        <!--role="alert" permite que el lector de pantalla anuncie el error cuando el contenido cambie. aria-live="assertive" indica que debe comunicarse inmediatamente al usuario. -->
-                        <span class="error-campo" id="error-guest_nombre" role="alert" aria-live="assertive" ></span> 
-                    </div>
-                    <div class="campo">
-                        <label for="guest_email">Correo electrónico</label>
-                        <input type="email" id="guest_email" name="guest_email">
-                        <span class="error-campo" id="error-guest_email"></span>
-                    </div>
-                    <div class="campo">
-                        <label for="guest_telefono">Teléfono</label>
-                        <input type="tel" id="guest_telefono" name="guest_telefono">
-                        <span class="error-campo" id="error-guest_telefono"></span>
-                    </div>
-                </fieldset>
-                <fieldset> 
-                    <legend>Información de la consulta</legend>
-                    <div class="campo">
-                        <label for="topico">Tópico</label>
-                        <select id="topico" name="topico">
-                            <option value="">Seleccione un tópico</option>
-                            <option value="503">Solicitud Cotización Obra Nueva</option>
-                            <option value="999">Dudas generales</option>
-                        </select>
-                        <span class="error-campo" id="error-topico"></span>
-                    </div>
-                    <div class="campo">
-                        <label for="descripcion">Consulta</label>
-                        <textarea id="descripcion" name="descripcion" placeholder="Escriba su consulta aquí..."></textarea>
-                        <span class="error-campo" id="error-descripcion"></span>
-                    </div>
-                <fieldset>     
+                <div class="campo">
+                    <label for="guest_nombre">Nombre completo</label>
+                    <input type="text" id="guest_nombre" name="guest_nombre">
+                    <span class="error-campo" id="error-guest_nombre"></span>
+                </div>
+                <div class="campo">
+                    <label for="guest_email">Correo electrónico</label>
+                    <input type="email" id="guest_email" name="guest_email">
+                    <span class="error-campo" id="error-guest_email"></span>
+                </div>
+                <div class="campo">
+                    <label for="guest_telefono">Teléfono</label>
+                    <input type="tel" id="guest_telefono" name="guest_telefono">
+                    <span class="error-campo" id="error-guest_telefono"></span>
+                </div>
+                <div class="campo">
+                    <label for="topico">Tópico</label>
+                    <select id="topico" name="topico">
+                        <option value="">Seleccione un tópico</option>
+                        <option value="503">Solicitud Cotización Obra Nueva</option>
+                        <option value="999">Dudas generales</option>
+                    </select>
+                    <span class="error-campo" id="error-topico"></span>
+                </div>
+                <div class="campo">
+                    <label for="descripcion">Consulta</label>
+                    <textarea id="descripcion" name="descripcion" placeholder="Escriba su consulta aquí..."></textarea>
+                    <span class="error-campo" id="error-descripcion"></span>
+                </div>
+
                 <button type="submit" class="boton-falso">Enviar Consulta</button>
             </form>
 
