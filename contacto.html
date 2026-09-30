@@ -28,7 +28,7 @@
             <div id="estado-formulario" role="status" aria-live="polite" tabindex="-1"></div>
 
             <!-- problema: no habia <form>, ni <label>, el envio era por onclick en un div -->
-            <form id="formulario-contacto">
+            <form id="formulario-contacto" novalidate>
                 <fieldset> <!--fieldset y legend permiten que las tecnologías asistivas identifiquen que estos campos pertenecen al mismo grupo-->
                     <legend>Datos de contacto</legend>
                     <div class="campo">
@@ -65,7 +65,7 @@
                         <textarea id="descripcion" name="descripcion" placeholder="Escriba su consulta aquí..." required aria-describedby="error-descripcion" ></textarea>
                         <span class="error-campo" id="error-descripcion" role="alert" aria-live="assertive" ></span>
                     </div>
-                <fieldset>     
+                </fieldset>     
                 <button type="submit" class="boton-falso">Enviar Consulta</button>
             </form>
 
