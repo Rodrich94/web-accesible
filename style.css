@@ -130,3 +130,36 @@ body {
     margin-bottom: 20px;
     color: #333333; /* Arreglo: contraste (antes #b0b0b0) */
 }
+
+#estado-formulario.error {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* Mensaje general cuando el formulario se envía correctamente */
+#estado-formulario.exito {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* Mensajes específicos de cada campo */
+.error-campo {
+    display: block;
+    color: #b00020;
+    margin-bottom: 10px;
+}
+
+/* Borde visual del campo inválido */
+.campo-invalido input,
+.campo-invalido select,
+.campo-invalido textarea {
+    border: 2px solid #b00020;
+}
